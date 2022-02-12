@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaches</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--Grids link-->
+    <link rel="stylesheet" href="Assets/grids.css">
+
+    <!--css link-->
+    <link rel="stylesheet" href="Assets/beach/beach.css">
+
+     <!--Vue JS CDN-->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <!--Pearl of the Indian Ocean-->
+    <div class="container-fluit cls">
+        <div class="container-1">
+           <div class="row">
+               <div class="navbar">
+                   <div>
+                       <h3 class="h3">Pearl of the Indian Ocean</h3>
+                   </div>
+
+                   <div>
+                       <ul class="ul-a">
+                           <li class="li-a"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li class="li-a"><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li class="li-a"><a href="https://github.com/AM-ASKY-97"><i class="fab fa-github"></i></a></li>
+                           <li class="li-a"><a href="https://www.linkedin.com/in/asky-mohammed-02742921b/"><i class="fab fa-linkedin-in"></i></a></li>
+                           <li class="li-a"><a href=""><i class="fab fa-youtube"></i></a></li>
+                       </ul>
+                   </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+    <!-- /Pearl of the Indian Ocean -->
+
+    <div class="container-1">
+       <div class="row">
+           <div class="imgani">
+               <img src="Assets/logo3.jfif" alt="" width="400px" height="150px">
+           </div>
+       </div>
+    </div>
+
+     <!--Pearl of the Indian Ocean-->
+     <div class="container-fluit sticky">
+        <div class="container-1">
+           <div class="row">
+               <div class="navbar-1">
+                   <div class="ul-a">
+                        <li class="li-a"><a href="index.html">Home</a></li>
+                        <li class="li-a"><a href="hottel.html">Hottels</a></li>
+                        <li class="li-a active"><a href="beaches.html">Beaches</a></li>
+                        <li class="li-a"><a href="mostPlaces.html">Most beautiful plces</a></li>
+                        <li class="li-a"><a href="Uva_Tourism.html">Uva Tourism</a></li>
+                        <li class="li-a "><a href="historical.html">Historical</a></li>
+                        <li class="li-a"><a href="About_us.html">About Us</a></li>
+                        <li class="li-a"><a href="contact.html">Contact</a></li>
+                   </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+    <!-- /Pearl of the Indian Ocean -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 style="margin-top:10px; font-size:45px">05 Top-Rated Beaches in Sri Lanka</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link page -->
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p style="margin-top:10px;"><i> <span style="color:#21ABA5">Your are here :</span>  <a href="index.html">Home > </a> <a href="beaches.html">Beaches</a></i></p>
+            </div>
+        </div>
+    </div>
+    <!-- /Link page -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <img src="Assets/beach/Best-Beaches.webp" alt=""  width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+         <!-- Place 01 Nilaveli -->
+        <div class="row">
+            <div class="col-8">
+                <h1>1. Nilaveli</h1>
+
+                <img src="Assets/beach/Nilaveli.jpg" alt="" width="100%">
+                <p style="color: gray">Nilaveli</p>
+
+                <p style="padding: 30px; font-size:25px; text-align: justify;">Nilaveli Beach is a broad, sandy beach, lined with palm trees and dotted with fishermen's boats. Located on the northeast part of Sri Lanka, it's a 30-minute drive from the city of Trincomalee. This tiny island has calm beaches with gentle surf due to its own small reef. Although the beach at Nilaveli is large, it is popular with both locals and tourists. There are lifeguards on duty and many little restaurants along the beach, most specializing in seafood.</p>
+
+                <p style="padding: 30px; font-size:25px; text-align: justify">The Trincomalee area is also good for sightseeing, as it's a center of Tamil culture. Tamil is the name of the language spoken in Sri Lanka and the ethnic group to which the majority of its residents belong.</p>
+            </div>
+
+            <div class="col-4" id="app">
+                <h1 style="margin-bottom:30px">Google Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63102.83583624644!2d81.15964764631589!3d8.698459900089015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbfb09eed1271%3A0x6eba10b3ef82c431!2sNilaveli%20Beach!5e0!3m2!1sen!2slk!4v1641465350582!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+               <div style="border:1px solid black; margin-top:20px; padding:20px; border-radius: 15px; background-color:#162447">
+                <div style=>
+                    <input type="text" name="" id="input" placeholder="Add Your Places....." v-model="message">
+
+                    <button id="btn" @click="Add1">Add</button>
+                </div>
+
+                <div style="margin-top:20px; color:whitesmoke"><h4>Your Places....</h4>  </div>
+
+                <div style="margin-top:20px; margin-left:25px;">
+                    <ol>
+                        <li v-for="places in place" style="font-size:20px; color:white">{{places}}</li>
+                    </ol>
+                </div>
+               </div>
+            </div>
+
+            <script src="Assets/beach/bvuue.js"></script>
+        </div>
+        <!-- /Place 01 Nilaveli -->
+
+
+        <!-- Place 02 Arugam Bay -->
+         <div class="row">
+           <div class="col-8">
+               <h1>2. Arugam Bay</h1>
+
+               <img src="Assets/beach/arugam-bay.jpg" alt="" width="100%">
+               <p style="color: gray">Arugam Bay</p>
+
+               <p style="padding: 30px; font-size:25px; text-align: justify;">Arugam Bay is dramatically beautiful, with bright white sand and deep blue water gradually becoming green the closer you get to the shore. With that beauty comes some of the best surf breaks in Sri Lanka, and the beach is known as an international surf destination. This reputation brings many visitors but also means the area has a good tourist infrastructure and is easy to access. The curving beach feels a bit like a Hawaiian beach - the area near the water slopes down, and there's a dry, sandy section, then rougher areas with shrubs and a tree line.</p>
+           </div>
+
+        <div class="col-4">
+               <h1 style="margin-bottom:30px">Google Map</h1>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15845.562332247333!2d81.82751832700845!3d6.843691420865424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5a2d27b6fafbf%3A0xc6efd6b59df5db34!2sArugam%20Bay%20Beach!5e0!3m2!1sen!2slk!4v1641465794889!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+        <!-- /Place 02 Arugam Bay -->
+
+        <!-- Place 03 Unawatuna -->
+         <div class="row">
+            <div class="col-8">
+                <h1>3. Unawatuna</h1>
+ 
+                <img src="Assets/beach/Unawatuna.jpg" alt="" width="100%">
+                <p style="color: gray">Unawatuna</p>
+ 
+                <p style="padding: 30px; font-size:25px; text-align: justify;">Unawatuna and its beach are near the colonial town of Galle, which is a great city for sightseeing. Sri Lanka was formerly a colony of both Portugal and Holland (at different times), and this was the country's main city during that time. About five kilometers outside Galle, Unawatuna offers another little bit of beach paradise.</p>
+            </div>
+ 
+          <div class="col-4">
+                <h1 style="margin-bottom:30px">Google Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31743.015229892637!2d80.23684481806833!3d6.011635371336976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae172f162bf926d%3A0xc0444c5e8377446c!2sUnawatuna!5e0!3m2!1sen!2slk!4v1641466023490!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+         </div>
+        <!-- /Place 03 Unawatuna -->
+
+        <!-- Place 04 Bentota -->
+        <div class="row">
+            <div class="col-8">
+                <h1>4. Bentota</h1>
+ 
+                <img src="Assets/beach/Bentota.webp" alt="" width="100%">
+                <p style="color: gray">Bentota</p>
+ 
+                <p style="padding: 30px; font-size:25px; text-align: justify;">Bentota is a popular resort town, only an hour from Colombo. It sees many package tourists but retains its spectacular natural beauty and is worth a visit. The sand is bright white on this wide beach, and the sea is bright aqua-blue due to its light-colored sandy bottom. The beach is surrounded by jungle and tall palm trees. Nearby attractions include many temples and remnants of the country's colonial past, like a fort protecting the old harbor of <b>Galle</b>.</p>
+            </div>
+ 
+          <div class="col-4">
+                <h1 style="margin-bottom:30px">Google Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31718.0312241508!2d79.98614821820436!3d6.425656352457759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!5e0!3m2!1sen!2slk!4v1641466664695!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+         </div>
+        <!-- /Place 04 Bentota -->
+
+
+        <!-- Place 05 Uppuveli -->
+        <div class="row">
+            <div class="col-8">
+                <h1>5. Uppuveli</h1>
+ 
+                <img src="Assets/beach/Uppuveli.jpg" alt="" width="100%">
+                <p style="color: gray">Uppuveli</p>
+ 
+                <p style="padding: 30px; font-size:25px; text-align: justify;">Located on the island's less developed east coast, Uppuveli offers a true remote, unspoiled beach experience. This is a real, rural beach, so your day at the beach just might be shared with a local cow. If you arrive early, you can watch (or help) the fisherman haul in their nets. The sand is golden, and the sea here is light-blue due to the sun's reflection off the sandy bottom. It's about five kilometers from Trincomalee.</p>
+            </div>
+ 
+          <div class="col-4">
+                <h1 style="margin-bottom:30px">Google Map</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7889.897903122636!2d81.21506777424452!3d8.60089997527405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbcf778722373%3A0x32135a0fb93722b5!2sUppuveli%2C%20Trincomalee!5e0!3m2!1sen!2slk!4v1641466981661!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+         </div>
+        <!-- /Place 05 Uppuveli -->
+    </div>
+
+
+
+
+      <!--Footer-->
+      <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>ABOUT US </h1>
+
+                    <p style="padding-top: 20px; text-align: justify;">We at Two Left Sticks provide real and unrevealed news of entertainment, business, education, technology, and many more. We are Google News Approved so our 
+                        main aim is to provide real value to our readers. If you have any query then please contact us</p>
+                </div>
+
+                <div class="col-4" style="padding-left: 30px;">
+                    <h1>QUICK</h1>
+                    <hr style="width:40px">
+
+                    <h4 style="padding-top: 16px;">
+                        <a href="About_us.html" style="color:gray"> >> About Us </a>
+                    </h4>
+
+                    <h4 style="padding-top: 16px;">
+                        <a href="contact.html" style="color:gray;"> >> Contact Us </a>
+                    </h4>
+                </div>
+
+                <div class="col-4">
+                    <h1 style="padding-left:10px">RESENT POST</h1>
+                    <hr style="width:40px; margin-bottom:20px; margin-left:10px">
+
+                    <div class="row" >
+                        <div class="col-3">
+                            <img src="Assets/hottel/img/king.jpg" alt="" width="100%" style="border-radius: 5px; border:none">
+                        </div>
+
+                        <div class="col-9" style="margin-top:15px;">
+                            <h4><a href="hottel.html" style="color:white">Sri Lanka Hotel Deals</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-3">
+                            <img src="Assets/most/Kandy.jpg" alt="" width="100%" style="border-radius: 5px; border:none">
+                        </div>
+
+                        <div class="col-9" style="margin-top:15px;">
+                            <h4><a href="mostPlaces.html" style="color:white">Most beautiful Places</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-1" style="color:black" >
+        <div class="row">
+            <h3 style="text-align:center; color:white">© Copyright 2021 All Rights Reserved | Founder <a href="http://am-asky-resume.herokuapp.com/">A.M. Asky</a></h3>
+        </div>
+    </div>
+    <!--/Footer-->
+</body>
+</html>

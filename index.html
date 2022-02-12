@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl of the Indian Ocean</title>
+
+    <!--Style css-->
+    <link rel="stylesheet" href="Assets/style.css">
+    <!--Grid System-->
+    <link rel="stylesheet" href="Assets/grids.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--Vue JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Pearl of the Indian Ocean-->
+    <div class="container-fluit-2" style="border-bottom: 1px solid white;">
+        <div class="container-1">
+           <div class="row">
+               <div class="navbar">
+                   <div>
+                       <h3 class="h3">Pearl of the Indian Ocean</h3>
+                   </div>
+
+                   <div>
+                       <ul class="ul-a">
+                           <li class="li-a"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li class="li-a"><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li class="li-a"><a href="https://github.com/AM-ASKY-97"><i class="fab fa-github"></i></a></li>
+                           <li class="li-a"><a href="https://www.linkedin.com/in/asky-mohammed-02742921b/"><i class="fab fa-linkedin-in"></i></a></li>
+                           <li class="li-a"><a href=""><i class="fab fa-youtube"></i></a></li>
+                       </ul>
+                   </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+    <!-- /Pearl of the Indian Ocean -->   
+
+
+     <!--Pearl of the Indian Ocean-->
+     <div class="container-fluit-2 sticky">
+        <div class="container-1">
+           <div class="row">
+               <div class="navbar-1">
+                   <div>
+                        <ul class="ul-a">
+                            <li class="li-a active"><a href="index.html">Home</a></li>
+                            <li class="li-a"><a href="hottel.html">Hottels</a></li>
+                            <li class="li-a"><a href="beaches.html">Beaches</a></li>
+                            <li class="li-a"><a href="mostPlaces.html">Most beautiful plces</a></li>
+                            <li class="li-a"><a href="Uva_Tourism.html">Uva Tourism</a></li>
+                            <li class="li-a "><a href="historical.html">Historical</a></li>
+                            <li class="li-a"><a href="About_us.html">About Us</a></li>
+                            <li class="li-a"><a href="contact.html">Contact</a></li>
+                        </ul>
+                   </div>
+               </div> 
+           </div>
+        </div>
+    </div>
+    <!-- /Pearl of the Indian Ocean -->   
+    
+    
+    <!--Banner -->
+    <div class="banner" id="app" style="margin-top:-20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="padding-top: 130px; text-align: center; color: white; font-size:80px">AN ISLAND ESCAPE <br> AWAITS YOU</h1>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:20px; ">
+                <div class="col-12">
+                    <div class="col-4">
+                        <div class="border">
+                            <input type="text" name="input" id="input" v-model="message" placeholder="Eter Your places" >
+                            <div style="color: white; margin-top:20px; font-size:20px">{{message}}</div>
+                        </div>
+                    </div>
+                    <div class="col-2" style="margin-left:400px">
+                        <button @click="Add" id="" style="background-color:#29DE99; border:none; padding:10px; color:white; width:100px; border-radius:15px; font-weight: bold;">Add Place</button>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <ol>
+                        <li v-for="(places, index) in place" style="color: white; font-size:20px; padding-top:6px">{{places}} <button @click="remove(index)" style="background-color:red; border:none; padding:2px; color:white; width:100px; border-radius:15px; font-weight: bold;">Delete</button></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:30px; text-align:center">
+                <div class="col-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Banner -->
+    <script src="Assets/vu.js"></script>
+   
+    <!--Places-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="ml">Welcome to Sri Lanka</h1>
+
+                <p style="font-size:20px">See what's waiting for you on your next island getaway. <br>
+                Savour the unique experiences this island treasure has to offer.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 natural" style="margin-bottom:30px">
+               <a href="nature.html">
+                    <div><img src="Assets/Nature and wilding.jpg" alt="" width="100%" height="250px" class="img"></div>
+
+                    <div><h2 style="text-align:center; padding-top: 10px;">Nature and wildlife</h2></div>
+               </a>
+            </div>
+    
+            <div class="col-4 beach">
+                <a href="beaches.html">
+                    <div><img src="Assets/beach.jpg" alt="" width="100%" height="250px" class="img"></div>
+
+                    <div><h2 style="text-align:center; padding-top: 10px;">Beaches</h2></div>
+                </a>
+            </div>
+    
+    
+            <div class="col-4 histrical">
+                <a href="historical.html">
+                    <div><img src="Assets/historical.jpg" alt="" width="100%" height="250px" class="img"></div>
+
+                    <div><h2 style="text-align:center; padding-top: 10px;">Historical Places</h2></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--/Places-->
+
+    <!-- Banner -->
+    <div class="row">
+            <div><img src="Assets/15-best-places-in-sri-lanka-Desktop-2000x500.jpeg" alt="" width="100%"></div>
+    </div>
+    <!-- /Banner -->
+
+   <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <h1 style="margin-top:50px;">10 Amazing And Most-Visited Sri Lanka Tourist Places For Your 2020 Trip!</h1>
+
+                <p style="text-align:justify; margin-bottom:50px; margin-top:20px">Do you want to give up all your work hours and travel far and wide with all the madness? Are you looking to relax lazy on a swing? Do you want to get rid of all the troubles? Well then a trip to Sri Lanka is your ultimate healer. With its beautiful beaches, mosaic landscape and beautiful topography, Sri Lanka has much to offer. So return your virtual bag and go through the best Sri Lankan tourist destinations.</p>
+            </div>
+
+            <div class="col-5" style="text-align:center; margin-top:105px;">
+                <a href="mostPlaces.html" class="btnAll">explore more</a>
+            </div>
+        </div>
+   </div>
+
+
+    <div class="banner-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="margin-top:100px; text-align:center; color:white; font-size:50px">20 Most beautiful places to travel for sure <br>  Uva tourism</h1> 
+                </div>
+
+                <div class="col-12" style="text-align:center; margin-top:50px;">
+                    <a href="Uva_Tourism.html" class="btnAll-1">explore more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="col-7">
+            <h1 style="margin-top:50px;">THE 10 BEST Sri Lanka Hottel Deal</h1>
+
+            <p style="text-align:justify; margin-bottom:50px; margin-top:20px">Do you want to give up all your work hours and travel far and wide with all the madness? Are you looking to relax lazy on a swing? Do you want to get rid of all the troubles? Well then a trip to Sri Lanka is your ultimate healer. With its beautiful beaches, mosaic landscape and beautiful topography, Sri Lanka has much to offer. So return your virtual bag and go through the best Sri Lankan tourist destinations.</p>
+        </div>
+
+        <div class="col-5" style="text-align:center; margin-top:105px;">
+            <a href="hottel.html" class="btnAll">explore more</a>
+        </div>
+    </div>
+
+
+    <div class="container-fluit" style="padding:60px">
+        <div class="container" style="background-color:white;"> 
+            <div class="row">
+                <div class="col-3" style="text-align:center;">
+                    <div class="address" style="margin-top:50px">
+                        <h2 style="color: darkblue;"><i class="fas fa-map-marker-alt"></i></h2>
+                        <h2>Address</h2>
+                        <h5 style="color: gray">294/5 Sammanthurai</h5>
+                    </div>
+
+                    <div class="phone"  style="margin-top:50px">
+                        <h2 style="color: darkblue;"><i class="fas fa-phone-alt"></i></h2>
+                        <h2>Phone</h2>
+                        <h5 style="color: gray">+0094775311974</h5>
+                        <h5 style="color: gray">+0094752030653</h5>
+                    </div>
+
+                    <div class="email"  style="margin-top:50px; margin-bottom:50px">
+                        <h2 style="color: darkblue;"><i class="fas fa-phone-alt"></i></h2>
+                        <h2>Email</h2>
+                        <h5 style="color: gray">tourist @ yahoo.com</h5>
+                        <h5 style="color: gray">tourism @ gmail.com</h5>
+                    </div>
+                </div>
+
+                <div class="col-1" style="height: 230px; border-left: 1px solid darkblue; margin-top:120px">
+
+                </div>
+
+                <div class="col-6">
+                    <h3 style="margin-top:60px; color:darkblue">Send us a message</h3>
+
+                    <p style="margin-top:10px; margin-bottom:10px">If you have any work from me or any type of quries related to my totorial, you can send me message from here. it's my pleosure to help you.</p>
+                
+                    <form action="">
+                        <input type="text" name="" id="" style="width:100%; background-color:rgb(219, 219, 219); border:none; padding:10px; margin-top:10px" placeholder="Enter your name">
+
+                        <input type="text" name="" id="" style="width:100%; background-color:rgb(219, 219, 219); border:none; padding:10px; margin-top:10px" placeholder="Enter your name">
+
+                        <input type="text" name="" id="" style="width:100%; height:90px; background-color:rgb(219, 219, 219); border:none; padding:10px; margin-top:10px" placeholder="Enter your name">
+                    
+                        <button style="background-color:darkblue; border:none; padding:10px; color:white; margin-top:10px; border-radius:5px">Send Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>ABOUT US </h1>
+
+                    <p style="padding-top: 20px; text-align: justify;">We at Two Left Sticks provide real and unrevealed news of entertainment, business, education, technology, and many more. We are Google News Approved so our 
+                        main aim is to provide real value to our readers. If you have any query then please contact us</p>
+                </div>
+
+                <div class="col-4" style="padding-left: 30px;">
+                    <h1>QUICK</h1>
+                    <hr style="width:40px">
+
+                    <h4 style="padding-top: 16px;">
+                        <a href="About_us.html" style="color:gray"> >> About Us </a>
+                    </h4>
+
+                    <h4 style="padding-top: 16px;">
+                        <a href="contact.html" style="color:gray;"> >> Contact Us </a>
+                    </h4>
+                </div>
+
+                <div class="col-4">
+                    <h1 style="padding-left:10px">RESENT POST</h1>
+                    <hr style="width:40px; margin-bottom:20px; margin-left:10px">
+
+                    <div class="row" >
+                        <div class="col-3">
+                            <img src="Assets/hottel/img/king.jpg" alt="" width="100%" style="border-radius: 5px; border:none">
+                        </div>
+
+                        <div class="col-9" style="margin-top:15px;">
+                            <h4><a href="hottel.html" style="color:white">Sri Lanka Hotel Deals</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:15px;">
+                        <div class="col-3">
+                            <img src="Assets/most/Kandy.jpg" alt="" width="100%" style="border-radius: 5px; border:none">
+                        </div>
+
+                        <div class="col-9" style="margin-top:15px;">
+                            <h4><a href="mostPlaces.html" style="color:white">Most beautiful Places</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-1" style="color:black" >
+        <div class="row">
+            <h3 style="text-align:center; color:white">© Copyright 2021 All Rights Reserved | Founder <a href="http://am-asky-resume.herokuapp.com/">A.M. Asky</a></h3>
+        </div>
+    </div>
+    <!--/Footer-->
+    
+
+    <script>
+        function display()
+        {
+            var input = document.getElementById('input').value;
+
+            if (input=="")
+            {
+                document.getElementById('btnVue').disabled=true;
+            }
+        }
+    </script>
+</body>
+</html>
